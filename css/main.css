@@ -1,0 +1,326 @@
+@font-face{
+	font-family: "Mulish";
+	font-weight: normal;
+	src: url(../fonts/Mulish-Regular.woff)
+		 url(../fonts/Mulish-Regular.woff2);
+}
+@font-face{
+	font-family: "Mulish";
+	font-weight: 300;
+	src: url(../fonts/Mulish-Light.woff)
+		 url(../fonts/Mulish-Light.woff2);
+}
+@font-face{
+	font-family: "Mulish";
+	font-weight: 500;
+	src: url(../fonts/Mulish-Medium.woff)
+		 url(../fonts/Mulish-Medium.woff2);
+}
+@font-face{
+	font-family: "Mulish";
+	font-weight: bold;
+	src: url(../fonts/Mulish-Bold.woff)
+		 url(../fonts/Mulish-Bold.woff2);
+}
+
+html{
+	box-sizing: border-box;
+}
+
+*::before,
+*::after,
+*{
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+body{
+	font-family: "Mulish", sans-serif;
+}
+
+hr{
+	border:none;
+	background-color: #000;
+	height: 2px;
+	width: 56px;
+	border-radius: 5px;
+}
+
+/*header*/
+
+.index-header{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.heading{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 25px;
+	width: 100%;
+}
+
+.logo-img{
+	width: 11.7vw;
+}
+
+.active{
+	font-weight: bold;
+}
+
+.nav-li__a{
+	display: inline-block;
+	padding: 0 1.46vw;
+	color: #1F1534;
+	line-height: 23px;
+	font-size: 18px;
+	border-bottom:solid 2px transparent;
+}
+
+.nav-li__a:not(.active){
+	opacity: 0.5;
+}
+
+.nav-li__a:hover{
+	border-bottom:solid 2px black;
+}
+
+.header-nav{
+	display: flex;
+}
+
+.healthcare-section{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 5vh;
+}
+
+.healthcare-section img{
+	width: 40vw;
+	object-fit: contain;
+}
+
+.healthcare-section-text{
+	display: flex;
+	flex-direction: column;
+	width: 445px;
+}
+
+.healthcare-section-text h1{
+	display: inline-block;
+	font-size: 48px;
+	margin: 0;
+}
+
+.healthcare-section-text p{
+	display: inline-block;
+	font-weight: 300;
+	font-size: 21px;
+	line-height: 32px;
+	color: #7D7987;
+	margin-top: 25px;
+}
+
+.healthcare-section-text a{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 200px;
+	height: 50px;
+	background-color: #458FF6;
+	border-radius: 55px;
+	color:white;
+	font-weight: 700;
+	font-size: 18px;
+	margin-top: 40px;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 90vw;
+	border:solid 1px black;
+}
+
+.button{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border: 1.4px solid #458FF6;
+	border-radius: 55px;
+	width: 200px;
+	height: 56px;
+	font-weight: bold;
+	font-size: 18px;
+	color: #458FF6;
+}
+
+.unsel{
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/*end of header*/
+
+.index-footer{
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+	margin-top: 200px;
+	background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+	padding: 118px 0 113px;
+}
+
+.index-footer *{
+	color:white;
+}
+
+.footer-wrapper{
+	display: flex;
+	justify-content: center;
+}
+
+.dark-logo span:first-child{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	font-size: 26px;
+	line-height: 33px;
+	color: #5B9BF3;
+	border-radius: 50%;
+	background-color: #fff;
+	width: 41px;
+	height: 41px;
+}
+
+.dark-logo span:last-child{
+	display: inline-block;
+	color: white;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 30px;
+	margin-left: 12px;
+}
+
+.rights{
+	width: 391px;
+	height: 201px;
+}
+
+.rights-text{
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 28px;
+	width: 391px;
+	margin-top: 17px;
+}
+
+.about{
+	display: inline-block;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 28px;
+	margin-top: 31px;
+}
+
+
+.footer-nav{
+	display: flex;
+	flex-direction: column;
+	height: 214px;
+}
+
+.regions, .company, .help{
+	margin-left: 111px;
+}
+
+.footer-nav h4{
+	font-size: 20px;
+	line-height: 60px;
+}
+
+.footer-nav-a{
+	display: inline-block;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 38px;
+}
+
+/*END*/
+
+@media only screen and (max-width: 1200px){
+	.healthcare-section img, .central-section img{
+		transform: scale(0.8);
+	}
+}
+
+@media only screen and (max-width: 575px){
+	.container{
+		width: 575px;
+	}
+
+	.logo-img{
+		width: 20vw;
+		height: 30vh;
+	}
+
+	.nav-list , .nav-li__a{
+		display: none;
+	}
+
+	.healthcare-section{
+		flex-direction: column;
+	}
+
+	.healthcare-section-text h1{
+		text-align: center;
+	}
+
+	.healthcare-section-text a{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.healthcare-section img{
+		width: 90vw;
+		margin:0;
+	}
+}
+
+
+
+@media only screen and (max-width: 900px){
+	.heading{
+		flex-direction: column;
+	}
+	.header-nav{
+		margin-top: 20px;
+		width: 100%;
+		justify-content: space-around;
+	}
+	.nav-li__a:hover{
+		border-bottom:none;
+	}
+}
+
+
+
+
+
+.co{
+	font-weight: bold;
+	color: rgba(0,0,0,0.4);
+	position: relative;
+	bottom: -100px;
+}
+
